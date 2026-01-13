@@ -34,3 +34,14 @@ The Selenium script covers:
   python selenium/selenium_script.py
   
 Test case table and functional issues are documented in docs.docx.
+
+## Observed Functional Issues
+Creating project without login	Allows project creation without authentication
+Tracker creation	Default status cannot be blank; prevents creating tracker for issues
+
+Full functional issues table is available in "Functional Testing using Selenium/docs.docx".
+
+### Notes
+
+- Redmine is deployed locally using Docker with SQLite database.
+- Selenium scripts include proper waits (time.sleep) for simplicity; can be replaced with explicit waits in production.
